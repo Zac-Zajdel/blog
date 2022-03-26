@@ -1,6 +1,6 @@
 ---
 name: Zac Zajdel
-avatar: /static/images/avatar.png
+avatar: /static/images/me.jpeg
 occupation: Full-Stack Software Engineer
 company: Indiana University of Pennsylvania
 email: zaczajdel213@gmail.com
