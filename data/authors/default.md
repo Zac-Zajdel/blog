@@ -4,7 +4,6 @@ avatar: /static/images/avatar.png
 occupation: Full-Stack Software Engineer
 company: Indiana University of Pennsylvania
 email: zaczajdel213@gmail.com
-twitter: https://twitter.com/Twitter
 linkedin: https://www.linkedin.com/in/zac-zajdel-9b832b191/
 github: https://github.com/Zac-Zajdel
 ---

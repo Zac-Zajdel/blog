@@ -18,8 +18,16 @@ const Giscus = ({ mapping }) => {
   const LoadComments = useCallback(() => {
     setEnabledLoadComments(false)
 
-    const { repo, repositoryId, category, categoryId, reactions, metadata, inputPosition, lang } =
-      siteMetadata?.comment?.giscusConfig
+    const {
+      repo,
+      repositoryId,
+      category,
+      categoryId,
+      reactions,
+      metadata,
+      inputPosition,
+      lang,
+    } = siteMetadata?.comment?.giscusConfig
 
     const script = document.createElement('script')
     script.src = 'https://giscus.app/client.js'

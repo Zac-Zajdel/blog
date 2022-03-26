@@ -17,7 +17,7 @@
     <description>The blog template supports posts in nested sub-folders. This can be used to group posts of similar content e.g. a multi-part course. This post is itself an example of a nested route!</description>
     <pubDate>Sun, 02 May 2021 00:00:00 GMT</pubDate>
     <author>zaczajdel213@gmail.com (Zac Zajdel)</author>
-    <category>multi-author</category><category>next-js</category><category>feature</category>
+    <category>next-js</category><category>feature</category>
   </item>
 
   <item>
@@ -48,26 +48,6 @@
     <pubDate>Fri, 11 Oct 2019 00:00:00 GMT</pubDate>
     <author>zaczajdel213@gmail.com (Zac Zajdel)</author>
     <category>github</category><category>guide</category>
-  </item>
-
-  <item>
-    <guid>https://zac-zajdel-blog.vercel.app//blog/the-time-machine</guid>
-    <title>The Time Machine</title>
-    <link>https://zac-zajdel-blog.vercel.app//blog/the-time-machine</link>
-    <description>The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us. His pale grey eyes shone and twinkled, and his usually pale face was flushed and animated...</description>
-    <pubDate>Wed, 15 Aug 2018 00:00:00 GMT</pubDate>
-    <author>zaczajdel213@gmail.com (Zac Zajdel)</author>
-    <category>writings</category><category>book</category><category>reflection</category>
-  </item>
-
-  <item>
-    <guid>https://zac-zajdel-blog.vercel.app//blog/pictures-of-canada</guid>
-    <title>O Canada</title>
-    <link>https://zac-zajdel-blog.vercel.app//blog/pictures-of-canada</link>
-    <description>The scenic lands of Canada featuring maple leaves, snow-capped mountains, turquoise lakes and Toronto. Take in the sights in this photo gallery exhibition and see how easy it is to replicate with some MDX magic and tailwind classes.</description>
-    <pubDate>Sat, 15 Jul 2017 00:00:00 GMT</pubDate>
-    <author>zaczajdel213@gmail.com (Zac Zajdel)</author>
-    <category>holiday</category><category>canada</category><category>images</category>
   </item>
 
   <item>
