@@ -1,4 +1,4 @@
-import { headerLinks } from "types"
+import { headerLinks } from 'types'
 
 const headerNavLinks: headerLinks = [
   { href: '/blog', title: 'Blog' },

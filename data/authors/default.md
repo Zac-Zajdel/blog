@@ -8,8 +8,15 @@ linkedin: https://www.linkedin.com/in/zac-zajdel-9b832b191/
 github: https://github.com/Zac-Zajdel
 ---
 
-Zac Zajdel Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Hey fellow tech enthusiast,
 
-Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+My name is Zac and I am based in Pittsburgh, Pennsylvania focusing my career on web development technologies.
+You can usually find me working on some side project, watching movies, listening to music just about 24/7, and hanging with friends.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+With technology, I am a big fan of the React & Vue ecosystems as well as Laravel, Node, PHP, AWS, and a host of other technologies
+which have helped revolutionize how developers brings their ideas to life!
+One thing this industry promises is that we will never get bored or complacent which is so refreshing.
+The generosity and commitment of developers worldwide keeps me striving to be my best self.
+
+I created this blog in hopes that what I learn and discover can be transferred to others.
+I wanna give to the community rather than only take so this is my attempt and if you made it this far then let's connect :)

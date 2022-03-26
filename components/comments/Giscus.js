@@ -4,8 +4,10 @@ import { useTheme } from 'next-themes'
 import siteMetadata from '@/data/siteMetadata'
 
 const Giscus = ({ mapping }) => {
+  // eslint-disable-next-line no-unused-vars
   const [enableLoadComments, setEnabledLoadComments] = useState(true)
   const { theme, resolvedTheme } = useTheme()
+
   const commentsTheme =
     siteMetadata.comment.giscusConfig.themeURL === ''
       ? theme === 'dark' || resolvedTheme === 'dark'
@@ -18,16 +20,8 @@ const Giscus = ({ mapping }) => {
   const LoadComments = useCallback(() => {
     setEnabledLoadComments(false)
 
-    const {
-      repo,
-      repositoryId,
-      category,
-      categoryId,
-      reactions,
-      metadata,
-      inputPosition,
-      lang,
-    } = siteMetadata?.comment?.giscusConfig
+    const { repo, repositoryId, category, categoryId, reactions, metadata, inputPosition, lang } =
+      siteMetadata?.comment?.giscusConfig
 
     const script = document.createElement('script')
     script.src = 'https://giscus.app/client.js'
