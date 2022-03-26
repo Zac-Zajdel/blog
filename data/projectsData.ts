@@ -1,4 +1,6 @@
-const projectsData = [
+import { Posts } from "types"
+
+const projectsData: Posts = [
   {
     title: 'A Search Engine',
     description: `What if you could look up any information in the world? Webpages, images, videos
