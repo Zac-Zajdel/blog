@@ -16,12 +16,13 @@
       "@/css/*": ["css/*"]
     },
     "allowJs": false,
+    "allowSyntheticDefaultImports": true,
     "jsx": "preserve",
     "removeComments": true,
     "noEmit": true,
     "isolatedModules": true,
     "strict": true,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "strictBindCallApply": true,
@@ -39,6 +40,12 @@
     "resolveJsonModule": true,
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "data/siteMetadata.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.ts",
+    "data/siteMetadata.ts",
+  ],
   "exclude": ["node_modules", ".next"]
 }

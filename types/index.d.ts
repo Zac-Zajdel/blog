@@ -37,4 +37,21 @@ export interface MetaData {
   newsletter: {
     provider: string
   }
+  comment: {
+    provider: string
+    giscusConfig: {
+      repo: string|undefined
+      repositoryId: string|undefined
+      category: string|undefined
+      categoryId: string|undefined
+      mapping: string
+      reactions: string
+      metadata: string
+      theme: string
+      inputPosition: string
+      lang: string
+      darkTheme: string
+      themeURL: string
+    }
+  }
 }
