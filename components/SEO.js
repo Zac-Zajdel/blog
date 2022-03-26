@@ -9,29 +9,17 @@ const CommonSEO = ({ title, description, ogType, ogImage, canonicalUrl }) => {
       <title>{title}</title>
       <meta name="robots" content="follow, index" />
       <meta name="description" content={description} />
-      <meta
-        property="og:url"
-        content={`${siteMetadata.siteUrl}${router.asPath}`}
-      />
+      <meta property="og:url" content={`${siteMetadata.siteUrl}${router.asPath}`} />
       <meta property="og:type" content={ogType} />
       <meta property="og:site_name" content={siteMetadata.title} />
       <meta property="og:description" content={description} />
       <meta property="og:title" content={title} />
       {ogImage.constructor.name === 'Array' ? (
-        ogImage.map(({ url }) => (
-          <meta property="og:image" content={url} key={url} />
-        ))
+        ogImage.map(({ url }) => <meta property="og:image" content={url} key={url} />)
       ) : (
         <meta property="og:image" content={ogImage} key={ogImage} />
       )}
-      <link
-        rel="canonical"
-        href={
-          canonicalUrl
-            ? canonicalUrl
-            : `${siteMetadata.siteUrl}${router.asPath}`
-        }
-      />
+      <link rel="canonical" href={canonicalUrl ? canonicalUrl : `${siteMetadata.siteUrl}${router.asPath}`} />
     </Head>
   )
 }
@@ -75,25 +63,11 @@ export const TagSEO = ({ title, description }) => {
   )
 }
 
-export const BlogSEO = ({
-  authorDetails,
-  title,
-  summary,
-  date,
-  lastmod,
-  url,
-  images = [],
-  canonicalUrl,
-}) => {
-  const router = useRouter()
+export const BlogSEO = ({ authorDetails, title, summary, date, lastmod, url, images = [], canonicalUrl }) => {
   const publishedAt = new Date(date).toISOString()
   const modifiedAt = new Date(lastmod || date).toISOString()
   let imagesArr =
-    images.length === 0
-      ? [siteMetadata.socialBanner]
-      : typeof images === 'string'
-      ? [images]
-      : images
+    images.length === 0 ? [siteMetadata.socialBanner] : typeof images === 'string' ? [images] : images
 
   const featuredImages = imagesArr.map((img) => {
     return {
@@ -153,12 +127,8 @@ export const BlogSEO = ({
         canonicalUrl={canonicalUrl}
       />
       <Head>
-        {date && (
-          <meta property="article:published_time" content={publishedAt} />
-        )}
-        {lastmod && (
-          <meta property="article:modified_time" content={modifiedAt} />
-        )}
+        {date && <meta property="article:published_time" content={publishedAt} />}
+        {lastmod && <meta property="article:modified_time" content={modifiedAt} />}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

@@ -14,6 +14,7 @@ export default async (req, res) => {
   }
 
   try {
+    // eslint-disable-next-line no-unused-vars
     const test = await mailchimp.lists.addListMember(process.env.MAILCHIMP_AUDIENCE_ID, {
       email_address: email,
       status: 'subscribed',
