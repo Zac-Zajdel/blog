@@ -15,7 +15,7 @@
       "@/lib/*": ["lib/*"],
       "@/css/*": ["css/*"]
     },
-    "allowJs": false,
+    "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "jsx": "preserve",
     "removeComments": true,
@@ -45,7 +45,7 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.ts",
-    "data/siteMetadata.ts",
+    "data/siteMetadata.ts", "scripts/generate-sitemap.js",
   ],
   "exclude": ["node_modules", ".next"]
 }

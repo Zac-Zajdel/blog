@@ -33,8 +33,7 @@ const TOCInline = ({
     : new RegExp('^(' + exclude + ')$', 'i')
 
   const filteredToc = toc.filter(
-    (heading) =>
-      heading.depth >= fromHeading && heading.depth <= toHeading && !re.test(heading.value)
+    (heading) => heading.depth >= fromHeading && heading.depth <= toHeading && !re.test(heading.value),
   )
 
   const tocList = (

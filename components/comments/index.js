@@ -5,7 +5,7 @@ const GiscusComponent = dynamic(
   () => {
     return import('@/components/comments/Giscus')
   },
-  { ssr: false }
+  { ssr: false },
 )
 
 const Comments = ({ frontMatter }) => {
