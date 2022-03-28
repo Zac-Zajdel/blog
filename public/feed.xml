@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>zaczajdel213@gmail.com (Zac Zajdel)</managingEditor>
       <webMaster>zaczajdel213@gmail.com (Zac Zajdel)</webMaster>
-      <lastBuildDate>Sun, 02 May 2021 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sun, 27 Mar 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://zac-zajdel-blog.vercel.app//feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://zac-zajdel-blog.vercel.app//blog/add-dependabot-to-your-project</guid>
+    <title>Add Dependabot to your project</title>
+    <link>https://zac-zajdel-blog.vercel.app//blog/add-dependabot-to-your-project</link>
+    <description>Use Dependabot to keep your projects dependencies up-to-date to grab those new features and fix those security vulnerabilities</description>
+    <pubDate>Sun, 27 Mar 2022 00:00:00 GMT</pubDate>
+    <author>zaczajdel213@gmail.com (Zac Zajdel)</author>
+    <category>Guide</category>
+  </item>
+
   <item>
     <guid>https://zac-zajdel-blog.vercel.app//blog/nested-route/introducing-multi-part-posts-with-nested-routing</guid>
     <title>Introducing Multi-part Posts with Nested Routing</title>
@@ -18,16 +28,6 @@
     <pubDate>Sun, 02 May 2021 00:00:00 GMT</pubDate>
     <author>zaczajdel213@gmail.com (Zac Zajdel)</author>
     <category>next-js</category><category>feature</category>
-  </item>
-
-  <item>
-    <guid>https://zac-zajdel-blog.vercel.app//blog/deriving-ols-estimator</guid>
-    <title>Deriving the OLS Estimator</title>
-    <link>https://zac-zajdel-blog.vercel.app//blog/deriving-ols-estimator</link>
-    <description>How to derive the OLS Estimator with matrix notation and a tour of math typesetting using markdown with the help of KaTeX.</description>
-    <pubDate>Mon, 21 Dec 2020 00:00:00 GMT</pubDate>
-    <author>zaczajdel213@gmail.com (Zac Zajdel)</author>
-    <category>next js</category><category>math</category><category>ols</category>
   </item>
 
   <item>
