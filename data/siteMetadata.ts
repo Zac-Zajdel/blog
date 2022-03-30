@@ -11,7 +11,7 @@ const siteMetadata: MetaData = {
   siteRepo: 'https://github.com/Zac-Zajdel/blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
-  socialBanner: '/static/images/twitter-card.png',
+  socialBanner: '/static/images/me.png',
   email: 'zaczajdel213@gmail.com',
   github: 'https://github.com/Zac-Zajdel',
   linkedin: 'https://www.linkedin.com/in/zac-zajdel-9b832b191/',
