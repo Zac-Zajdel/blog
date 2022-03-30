@@ -7,17 +7,17 @@
       <language>en-us</language>
       <managingEditor>zaczajdel213@gmail.com (Zac Zajdel)</managingEditor>
       <webMaster>zaczajdel213@gmail.com (Zac Zajdel)</webMaster>
-      <lastBuildDate>Wed, 11 Nov 2020 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Tue, 29 Mar 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://zac-zajdel-blog.vercel.app//tags/guide/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>https://zac-zajdel-blog.vercel.app//blog/guide-to-using-images-in-nextjs</guid>
-    <title>Images in Next.js</title>
-    <link>https://zac-zajdel-blog.vercel.app//blog/guide-to-using-images-in-nextjs</link>
-    <description>In this article we introduce adding images in the tailwind starter blog and the benefits and limitations of the next/image component.</description>
-    <pubDate>Wed, 11 Nov 2020 00:00:00 GMT</pubDate>
+    <guid>https://zac-zajdel-blog.vercel.app//blog/add-dependabot-to-your-project</guid>
+    <title>Add Dependabot to your project</title>
+    <link>https://zac-zajdel-blog.vercel.app//blog/add-dependabot-to-your-project</link>
+    <description>Use Dependabot to keep your projects dependencies up-to-date to grab those new features and fix those security vulnerabilities</description>
+    <pubDate>Tue, 29 Mar 2022 00:00:00 GMT</pubDate>
     <author>zaczajdel213@gmail.com (Zac Zajdel)</author>
-    <category>next js</category><category>guide</category>
+    <category>Guide</category><category>Github</category>
   </item>
 
   <item>
