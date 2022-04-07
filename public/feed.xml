@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>zaczajdel213@gmail.com (Zac Zajdel)</managingEditor>
       <webMaster>zaczajdel213@gmail.com (Zac Zajdel)</webMaster>
-      <lastBuildDate>Mon, 04 Apr 2022 04:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Wed, 06 Apr 2022 04:00:00 GMT</lastBuildDate>
       <atom:link href="https://zac-zajdel-blog.vercel.app//feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://zac-zajdel-blog.vercel.app//blog/creating-custom-terminal-aliases</guid>
+    <title>Creating Custom Terminal Aliases</title>
+    <link>https://zac-zajdel-blog.vercel.app//blog/creating-custom-terminal-aliases</link>
+    <description>Have your terminal work better for you and improve efficiency!</description>
+    <pubDate>Wed, 06 Apr 2022 04:00:00 GMT</pubDate>
+    <author>zaczajdel213@gmail.com (Zac Zajdel)</author>
+    <category>Terminal</category>
+  </item>
+
   <item>
     <guid>https://zac-zajdel-blog.vercel.app//blog/composition-api-script-setup-syntax</guid>
     <title>Composition API &lt;script setup&gt; Syntax</title>
