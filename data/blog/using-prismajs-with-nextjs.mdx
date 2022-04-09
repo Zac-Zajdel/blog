@@ -45,7 +45,7 @@ npm install @prisma/client
 npx prisma init
 ```
 
-- You will need to create to now create a `.env` file in your root directory to connect to your database. For this example,
+- Create a `.env` file in your root directory to connect to your database. For this example,
   we will be using mysql and connecting to our local database:
 
 ```js
@@ -53,7 +53,7 @@ DATABASE_URL = 'mysql://MYSQL_USERNAME:MYSQL_PASSWORD@localhost:3306/DATABASE_NA
 ```
 
 - A directory `prisma` has been created which includes a `schema.prisma` file.
-  This is where you setup your data source and create your database models.
+  This is where you'll setup the data source and create your database models.
   For the purposes of this tutorial, copy the following into your file:
 
 ```js
@@ -113,7 +113,7 @@ main()
   })
 ```
 
-- Finally let's put your hard work to the test and generate your database Schema & create a migration & run the seeder:
+- Finally let's put your hard work to the test and generate your database Schema, create a migration, and run the seeder:
 
 ```bash
 yarn prisma migrate dev --name init
@@ -124,7 +124,7 @@ yarn prisma migrate dev --name init
 - All databases can only handle a certain number of concurrent connections. Too many and the strain on our DB can be tremendous affecting
   performance, cost, and many other factors. With Prisma, it is easy to create a new database connection each time we want to do some CRUD
   transaction on our DB. In order to mitigate these issues, we can build a single instance for re-use throughout our API routes.
-- Create a `lib` directory in your root directory and generate a file label `prisma.ts` with the following content:
+- Create a `lib` directory in your root directory and generate a file names `prisma.ts` with the following content:
 
 ```js
 import { PrismaClient } from '@prisma/client'
@@ -193,3 +193,13 @@ export const getServerSideProps = async () => {
 
 export default Demo
 ```
+
+## Finish Line
+
+Congrats! We have now successfully added Prisma to your Next.js application. In this tutorial, we learned about the following:
+
+1. Setting up Prisma in an existing Next.js application.
+2. Generating our Schema inside our `schema.prisma` file.
+3. Allowing our DB connections with Prisma scale.
+4. Using `Next.js API routes` to query our database.
+5. Using `getServerSideProps` to fetch data from our front-end.
