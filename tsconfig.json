@@ -45,7 +45,7 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.ts",
-    "data/siteMetadata.ts", "scripts/generate-sitemap.js", "pages/about.js",
+    "data/siteMetadata.ts", "scripts/generate-sitemap.js", "pages/_document.js",
   ],
   "exclude": ["node_modules", ".next"]
 }
