@@ -29,11 +29,11 @@
   </url>
 
   <url>
-    <loc>https://zac-zajdel-blog.vercel.app//tags/composition-api</loc>
+    <loc>https://zac-zajdel-blog.vercel.app//blog/creating-custom-terminal-aliases</loc>
   </url>
 
   <url>
-    <loc>https://zac-zajdel-blog.vercel.app//tags/guide</loc>
+    <loc>https://zac-zajdel-blog.vercel.app//tags/composition-api</loc>
   </url>
 
   <url>
@@ -41,7 +41,15 @@
   </url>
 
   <url>
+    <loc>https://zac-zajdel-blog.vercel.app//tags/guide</loc>
+  </url>
+
+  <url>
     <loc>https://zac-zajdel-blog.vercel.app//tags/markdown</loc>
+  </url>
+
+  <url>
+    <loc>https://zac-zajdel-blog.vercel.app//tags/terminal</loc>
   </url>
 
   <url>
