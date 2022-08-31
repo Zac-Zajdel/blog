@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>zaczajdel213@gmail.com (Zac Zajdel)</managingEditor>
       <webMaster>zaczajdel213@gmail.com (Zac Zajdel)</webMaster>
-      <lastBuildDate>Sat, 09 Apr 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Tue, 30 Aug 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://zac-zajdel-blog.vercel.app//feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://zac-zajdel-blog.vercel.app//blog/planetscale-integration-with-nextjs</guid>
+    <title>Planetscale integration with Next.js</title>
+    <link>https://zac-zajdel-blog.vercel.app//blog/planetscale-integration-with-nextjs</link>
+    <description>Simplify and hypercharge development with Planetscale</description>
+    <pubDate>Tue, 30 Aug 2022 00:00:00 GMT</pubDate>
+    <author>zaczajdel213@gmail.com (Zac Zajdel)</author>
+    <category>Planetscale</category><category>Next.js</category>
+  </item>
+
   <item>
     <guid>https://zac-zajdel-blog.vercel.app//blog/using-prismajs-with-nextjs</guid>
     <title>Using Prisma with Next.js &amp; TypeScript</title>
