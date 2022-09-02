@@ -1,0 +1,68 @@
+---
+title: Easy authentication with NextAuth.js
+date: '2022-09-01'
+tags: ['Next.js', 'NextAuth.js', 'Prisma']
+draft: false
+summary: Get authentication up and running quickly for your Next.js application
+images: []
+layout: PostLayout
+canonicalUrl:
+---
+
+# What is NextAuth.js?
+
+NextAuth.js is an extremely powerful and easy to use solution for authentication users for your Next.js application.
+With support for popular databases such as MySQL, Postgres, and MongoDB, there is a good chance you will be up and
+running with authentication for your application in no time.
+
+For this example, we will be using Google OAuth 2.0 as our provider and Prisma for our adapter.
+However following the links for a list of other [providers](https://next-auth.js.org/providers/) and
+[adapters](https://next-auth.js.org/providers/) to match your application. Let's get started!
+
+## Setting up your Google Cloud Console Configurations
+
+Before we get started, we need to sign into our Google Account and access the [Google Cloud Console](https://console.cloud.google.com)
+From there take the following steps:
+
+1. Create a new project.
+2. Then navigate to APIs and Services on the sidebar and select the credentials.
+3. Choose CREATE CREDENTIALS and select OAuth client ID
+4. You will then need to configure your URI to http://localhost
+5. Set your Authorized redirect URI to http://localhost/api/auth/callback/google
+6. Generate your client id and client secret and make sure to save these somewhere on your computer. We are gonna need these next.
+
+## Settings up the Prisma adapter
+
+1. Make sure the following packages are added to your application:
+
+```js
+yarn add next-auth @prisma/client @next-auth/prisma-adapter
+```
+
+2. Create a .env file in the root directory of your application and add the client id and secret you received from Google in the previous steps as such:
+
+```js
+GOOGLE_CLIENT_ID = 'INSERT_YOUR_CLIENT_ID_HERE'
+GOOGLE_CLIENT_SECRET = 'INSERT_YOUR_CLIENT_SECRET_HERE'
+```
+
+3. Create a [...nextauth].ts file inside of the 'pages/api/auth' directory and add the following:
+
+```js
+import NextAuth from 'next-auth'
+import GoogleProvider from 'next-auth/providers/google'
+import { PrismaAdapter } from '@next-auth/prisma-adapter'
+import { PrismaClient } from '@prisma/client'
+
+const prisma = new PrismaClient()
+
+export default NextAuth({
+  adapter: PrismaAdapter(prisma),
+  providers: [
+    GoogleProvider({
+      clientId: process.env.GOOGLE_CLIENT_ID,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+    }),
+  ],
+})
+```
