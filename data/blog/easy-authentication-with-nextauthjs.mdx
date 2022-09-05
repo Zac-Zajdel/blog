@@ -11,16 +11,16 @@ canonicalUrl:
 
 # What is NextAuth.js?
 
-NextAuth.js is a powerful and easy to use solution for authentication users for your Next.js application.
+NextAuth.js is a powerful and easy to use solution for authenticating users in your Next.js application.
 With support for popular databases such as MySQL, Postgres, and MongoDB, there is a good chance you will be up and
-running with authentication for your application in no time.
+running in no time.
 
 For this example, we will be using Google OAuth 2.0 as our provider and Prisma for our adapter.
 If you get stuck along the way, check out the Public Template [PrismaNext](https://github.com/Zac-Zajdel/PrismaNext) this guide is built from.
 
 ## Tech Stack Assumptions
 
-##### The following guide is utilizing the following technologies:
+##### This guide is utilizing the following technologies:
 
 - [Google OAuth 2.0](https://console.cloud.google.com/getting-started) - Documentation for Google Cloud Console
 - [React.js 18](https://reactjs.org) - Documentation for React.js
@@ -31,25 +31,25 @@ If you get stuck along the way, check out the Public Template [PrismaNext](https
 
 ## Setting up your Google Cloud Console Configurations
 
-Before we get started, we need to sign into our Google Account. This will allow to your [Google Cloud Console](https://console.cloud.google.com).
+Before we get started, we need to sign into our Google Account and access the [Google Cloud Console](https://console.cloud.google.com).
 From there take the following steps:
 
 1. Create a new project.
-2. Then navigate to APIs & Services on the sidebar.
-3. Choose CREATE CREDENTIALS and select OAuth client ID to create your application.
+2. Navigate to APIs & Services from the sidebar.
+3. Choose CREATE CREDENTIALS and select OAuth client ID for your application.
 4. When you recieve your Client ID and Client Secret, make sure to save these for later.
 5. Go into the details page of your Client and add the following URI's.
-6. Set your Authorized JavaScript origins to the following URI:` http://localhost:3000`
+6. Set your Authorized JavaScript origins URI to the following:` http://localhost:3000`
 7. Set your Authorized redirect URIs to the following: `http://localhost:3000/api/auth/callback/google`
 
-Inside of your `.env` file, add the Client ID and Client Secret you recieved from Google:
+Inside your `.env` file, add the Client ID and Client Secret you recieved from Google:
 
 ```js
 GOOGLE_CLIENT_ID = 'INSERT_YOUR_CLIENT_ID_HERE'
 GOOGLE_CLIENT_SECRET = 'INSERT_YOUR_CLIENT_SECRET_HERE'
 ```
 
-Note: We need to secure out hostname configuration for image domains in our `next.config.js` file
+Note: We need to secure out hostname configuration for image domains in our `next.config.js` file:
 
 ```js
 /**
@@ -70,7 +70,7 @@ module.exports = {
 yarn add next-auth @prisma/client @next-auth/prisma-adapter
 ```
 
-2. Create a [...nextauth].ts file inside of the 'pages/api/auth' directory and add the following:
+2. Create a `[...nextauth].ts` file inside of the `'pages/api/auth'` directory and add the following:
 
 ```js
 import NextAuth from 'next-auth'
@@ -158,8 +158,7 @@ yarn prisma migrate dev
 ## Share your sessions state with useSession()
 
 To access session information, you will be using the [useSession()](https://next-auth.js.org/getting-started/client#usesession) hook.
-You will need to grant access to your entire project to read this session.
-In your `_app.tsx` file, wrap your application with [SessionProvider](https://next-auth.js.org/getting-started/upgrade-v4#sessionprovider):
+To view your session data, adjust your `_app.tsx` file by wrapping your application with [SessionProvider](https://next-auth.js.org/getting-started/upgrade-v4#sessionprovider):
 
 ```js
 import { AppProps } from 'next/app'
@@ -257,4 +256,4 @@ export default Login
 ## Wrap up
 
 Congrats on making it to the end! You should now have working knowledge of how to integrate authentication with Next.js and the incredibly powerful NextAuth package.
-If you have any issues, you can follow a working example within this [PrismaNext](https://github.com/Zac-Zajdel/PrismaNext).
+If you have any issues, you can follow a working example within the [PrismaNext](https://github.com/Zac-Zajdel/PrismaNext) template.
