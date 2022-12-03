@@ -7,8 +7,8 @@ const CustomLink = ({ href, ...rest }) => {
 
   if (isInternalLink) {
     return (
-      <Link href={href}>
-        <a {...rest} />
+      <Link href={href} passHref>
+        {rest.children}
       </Link>
     )
   }

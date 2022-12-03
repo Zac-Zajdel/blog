@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Learn with Zac</title>
+      <link>https://zac-zajdel-blog.vercel.app//blog</link>
+      <description>Let&#39;s learn together about techy things</description>
+      <language>en-us</language>
+      <managingEditor>zaczajdel213@gmail.com (Zac Zajdel)</managingEditor>
+      <webMaster>zaczajdel213@gmail.com (Zac Zajdel)</webMaster>
+      <lastBuildDate>Thu, 01 Sep 2022 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://zac-zajdel-blog.vercel.app//tags/nextauthjs/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://zac-zajdel-blog.vercel.app//blog/easy-authentication-with-nextauthjs</guid>
+    <title>Easy authentication with NextAuth.js</title>
+    <link>https://zac-zajdel-blog.vercel.app//blog/easy-authentication-with-nextauthjs</link>
+    <description>Get authentication up and running quickly for your Next.js application</description>
+    <pubDate>Thu, 01 Sep 2022 00:00:00 GMT</pubDate>
+    <author>zaczajdel213@gmail.com (Zac Zajdel)</author>
+    <category>Next.js</category><category>NextAuth.js</category><category>Prisma</category>
+  </item>
+
+    </channel>
+  </rss>
