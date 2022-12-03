@@ -5,5 +5,7 @@
   "singleQuote": true,
   "semi": false,
   "useTabs": false,
-  "trailingComma": "all"
+  "trailingComma": "all",
+  "singleAttributePerLine": true,
+  "htmlWhitespaceSensitivity": "ignore"
 }
