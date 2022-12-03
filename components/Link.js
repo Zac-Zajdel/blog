@@ -7,17 +7,32 @@ const CustomLink = ({ href, ...rest }) => {
 
   if (isInternalLink) {
     return (
-      <Link href={href} passHref>
+      <Link
+        href={href}
+        passHref
+      >
         {rest.children}
       </Link>
     )
   }
 
   if (isAnchorLink) {
-    return <a href={href} {...rest} />
+    return (
+      <a
+        href={href}
+        {...rest}
+      />
+    )
   }
 
-  return <a target="_blank" rel="noopener noreferrer" href={href} {...rest} />
+  return (
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href={href}
+      {...rest}
+    />
+  )
 }
 
 export default CustomLink
