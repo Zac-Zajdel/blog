@@ -16,7 +16,10 @@ const LayoutWrapper = ({ children }) => {
       <div className="flex h-screen flex-col justify-between">
         <header className="flex items-center justify-between py-10">
           <div>
-            <Link href="/" aria-label={siteMetadata.headerTitle}>
+            <Link
+              href="/"
+              aria-label={siteMetadata.headerTitle}
+            >
               <div className="flex items-center justify-between">
                 <div className="mr-3">
                   <Logo />
@@ -37,14 +40,15 @@ const LayoutWrapper = ({ children }) => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className={`${
-                    activeLink === link.title
-                      ? 'border-b-2 border-gray-900 text-primary-400 dark:border-white dark:text-primary-400'
-                      : null
-                  } p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4`}
-                  onClick={() => setActiveLink(link.title)}
                 >
-                  {link.title}
+                  <span
+                    className={`${
+                      activeLink === link.title ? 'border-b-2 border-gray-900 text-primary-400 dark:border-white dark:text-primary-400' : null
+                    } p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4`}
+                    onClick={() => setActiveLink(link.title)}
+                  >
+                    {link.title}
+                  </span>
                 </Link>
               ))}
             </div>
