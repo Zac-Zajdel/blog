@@ -23,13 +23,7 @@ const Comments = ({ frontMatter }) => {
       term = frontMatter.title
       break
   }
-  return (
-    <div id="comment">
-      {siteMetadata.comment && siteMetadata.comment.provider === 'giscus' && (
-        <GiscusComponent mapping={term} />
-      )}
-    </div>
-  )
+  return <div id="comment">{siteMetadata.comment && siteMetadata.comment.provider === 'giscus' && <GiscusComponent mapping={term} />}</div>
 }
 
 export default Comments
